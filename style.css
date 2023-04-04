@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(30, 38%, 92%);
+}
+.card{
+    width: 550px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_section{
+   background-image: url(images/image-product-desktop.jpg);
+   width: 50%;
+   background-position: center;
+   background-size: cover;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   display: flex;
+}
+.summary{
+    padding: 20px 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+.item-category{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+h1{
+    color: black;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.description{
+    color: hsl(228, 12%, 48%);
+    font-family:'Montserrat', sans-serif ; 
+    font-weight: 500;
+}
+.new-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+/* @media only screen and (min-width:641px) and (max-width:768px) {
+    
+      .card{max: width 600px;} */
+      @media only screen and (max-width: 550px) {
+        .card {
+          margin-top: 1rem;
+          flex-direction: column;
+          margin-bottom: 1rem;
+        }
+      
+        .img_container {
+          width: 100%;
+          background-image: url(images/image-product-mobile.jpg);
+        }
+      
+        
+      
+        
+      }
+        
